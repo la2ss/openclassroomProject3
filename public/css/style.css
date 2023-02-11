@@ -24,6 +24,131 @@ body {
   font-family: "roboto", sans-serif;
 }
 
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.page a {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  align-items: center;
+  font-size: x-large;
+  color: #000;
+}
+.page img {
+  width: 40%;
+}
+
+#img-food {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  margin: 20px auto;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 25px;
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.commander:hover {
+  filter: brightness(1.2);
+}
+
+#template {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: auto;
+  background: #F2F2F2;
+  width: 100%;
+  position: relative;
+  margin-top: -40px;
+}
+#template h3 {
+  font-weight: 100;
+  margin: 0px 0px 25px 10px;
+}
+#template article {
+  position: relative;
+}
+#template article h3::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  width: 56px;
+  border-bottom: 3px solid #99E2D0;
+}
+#template h2 {
+  font-family: "Shrikhand", cursive;
+}
+#template .card-body {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  max-width: 1080px;
+}
+#template .card-body h3 {
+  min-width: 150px;
+  position: relative;
+  padding: 8px;
+}
+#template .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: large;
+  font-family: "Shrikhand", cursive;
+  margin: 0 10px;
+}
+#template .card-header h2,
+#template i {
+  font-size: x-large;
+  margin-left: 15px;
+}
+#template .card-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#template .card-price span {
+  font-weight: bold;
+}
+
+/* ------------------------------media querie desktop------------------------------ */
+@media screen and (min-width: 992px) {
+  .commander {
+    margin-top: 50px;
+    width: 15%;
+  }
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background: #ffffff;
+  font-family: "roboto", sans-serif;
+}
+
 header {
   width: 100%;
   display: flex;
