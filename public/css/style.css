@@ -184,7 +184,6 @@ body {
   margin: 20px auto;
   text-align: center;
   color: #ffffff;
-  border: 1px solid #e8e8e8;
   border-radius: 25px;
   padding: 15px;
   background: linear-gradient(#FF79DA, #9356DC);
@@ -194,6 +193,7 @@ body {
 
 .commander:hover {
   filter: brightness(1.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 #template {
@@ -370,6 +370,7 @@ header img {
 }
 .reservation .bouton:hover {
   filter: brightness(1.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
 }
 .reservation h1,
 .reservation h2,
