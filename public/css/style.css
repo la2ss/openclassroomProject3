@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid gray;
+  justify-content: center;
+}
+header a {
+  display: none;
+}
+header img {
+  width: 40%;
+  padding: 30px 0 15px 0;
+}
+
+.localisation {
+  display: flex;
+  background-color: #eaeaea;
+  padding: 25px 0 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+.localisation .location {
+  margin-left: 40px;
+  display: flex;
+}
+.localisation i {
+  padding: 0 10px 0 0;
+}
+.localisation input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.localisation input::placeholder {
+  color: #000;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0 45px;
+  background-color: #f7f7f7;
+}
+.reservation h1 {
+  width: 60%;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+}
+.reservation h2 {
+  width: 85%;
+  margin: auto;
+  font-size: 17px;
+  font-weight: 400;
+  color: #595959;
+}
+.reservation .bouton {
+  width: 54%;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin: auto;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 25px;
+  padding: 15px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.reservation .bouton:hover {
+  filter: brightness(1.2);
+}
+.reservation h1,
+.reservation h2,
+.reservation .bouton {
+  margin-bottom: 15px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+  padding: 8px;
+  justify-content: space-around;
+}
+.fonctionnement .bouton {
+  position: relative;
+  width: 90%;
+  height: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  margin: 0 0 10px 12px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 20px;
+  padding: 15px 15px 15px 0px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.fonctionnement .bouton i {
+  color: #7e7e7e;
+}
+.fonctionnement .bouton .fa-mobile-screen-button,
+.fonctionnement .bouton .fa-store,
+.fonctionnement .bouton .icon-combi {
+  position: absolute;
+  left: 10%;
+  font-size: medium;
+}
+.fonctionnement .bouton .fonction1 {
+  margin-left: 40px;
+}
+.fonctionnement .bouton .fonction2 {
+  margin-left: 25px;
+}
+.fonctionnement .bouton .fonction3 {
+  margin-left: 30px;
+}
+.fonctionnement .bouton:hover {
+  background: #f5edff;
+}
+.fonctionnement .bouton:hover i {
+  color: #9356DC;
+}
+.fonctionnement .cercle {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: #FFF;
+  left: -8px;
+}
+
+.restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  padding: 8px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+}
+.restaurant .titre {
+  padding-left: 12px;
+}
+.restaurant .card-restaurant {
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+.restaurant .card-restaurant .redirection {
+  color: #000;
+  text-decoration: none;
+}
+.restaurant .card-restaurant img {
+  height: 180px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+.restaurant .card-restaurant .btn_nouveau {
+  display: flex;
+  position: absolute;
+  height: 30px;
+  width: 80px;
+  color: #139273;
+  background-color: #99E2D0;
+  top: 15px;
+  right: 15px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.restaurant .card-restaurant .card-text {
+  padding: 5px 0 15px 15px;
+}
+.restaurant .card-restaurant .card-text .card-title,
+.restaurant .card-restaurant .card-text .card-subtitle {
+  margin: 0;
+}
+.restaurant .card-restaurant .card-text .star {
+  position: absolute;
+  right: 18px;
+  bottom: 25px;
+  font-size: x-large;
+}
+
+footer {
+  padding: 15px;
+  background-color: #353535;
+  text-align: left;
+  color: #FFF;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.1rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  font-size: small;
+  margin-bottom: 3px;
+}
+footer ul li i {
+  width: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* ------------------------------media querie tablettes------------------------------ */
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fonctionnement .bouton {
+    margin: 0 0 10px 12px;
+    width: 25%;
+    font-size: small;
+  }
+  .fonctionnement .bouton .fa-mobile-screen-button,
+  .fonctionnement .bouton .fa-store,
+  .fonctionnement .bouton .icon-combi {
+    position: absolute;
+    left: 8%;
+    font-size: small;
+  }
+  .fonctionnement .bouton .fonction1,
+  .fonctionnement .bouton .fonction2,
+  .fonctionnement .bouton .fonction3 {
+    margin-left: 25px;
+  }
+  .fonctionnement .titre {
+    width: 100%;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .restaurant .titre {
+    width: 100%;
+  }
+  .restaurant .card-restaurant {
+    height: auto;
+    width: 300px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  footer ul li {
+    flex-direction: row;
+  }
+}
+/* ------------------------------media querie desktop------------------------------ */
+@media screen and (min-width: 992px) {
+  body {
+    margin: 0 1.5%;
+  }
+  .nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: linear-gradient(#ffffff, #eaeaea);
+  }
+  header {
+    width: 33%;
+    border-bottom: none;
+  }
+  .localisation {
+    width: 33%;
+    justify-content: end;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+  }
+  .reservation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .reservation .bouton {
+    width: 30%;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fonctionnement .bouton {
+    margin: 0 0 10px 12px;
+    width: 20%;
+    font-size: large;
+  }
+  .fonctionnement .bouton .fa-mobile-screen-button,
+  .fonctionnement .bouton .fa-store,
+  .fonctionnement .bouton .icon-combi {
+    font-size: large;
+  }
+  .fonctionnement .titre {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  footer ul li {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

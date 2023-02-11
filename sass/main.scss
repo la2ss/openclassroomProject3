@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+$font-global:'roboto', sans-serif;
+$font-titre: 'Shrikhand', cursive;
+
+$couleur-primaire:#9356DC;
+$couleur-secondaire:#FF79DA;
+$couleur-tertiaire:#99E2D0;  
+$animation-duration: 3s;
+
+
+
+
+
+
+
+
+//------------------------header
+header {
+
+    width: 100%;
+    display: flex;
+  
+    border-bottom: 2px solid gray;
+    justify-content: center;
+  
+  
+    & a {
+      display: none;
+    }
+  
+    & img {
+      width: 40%;
+      padding: 30px 0 15px 0;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  //------------------------localisation
+  .localisation {
+    display: flex;
+    background-color: #eaeaea;
+    padding: 25px 0 20px 0;
+    justify-content: center;
+    align-items: center;
+  
+    .location {
+      //280
+      margin-left: 40px;
+      display: flex;
+  
+    }
+  
+    i {
+      //padding: 10px 10px 0 0;
+      padding: 0 10px 0 0;
+    }
+  
+    input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+  
+  
+    }
+  
+    input::placeholder {
+      color: #000;
+    }
+  }
+  
+  //-------------------------reservation
+  .reservation {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0 45px;
+    background-color: #f7f7f7;
+  
+    h1 {
+      width: 60%;
+      margin: auto;
+  
+      font-size: 24px;
+      font-weight: 700;
+  
+    }
+  
+    h2 {
+      width: 85%;
+      margin: auto;
+      font-size: 17px;
+      font-weight: 400;
+      color: #595959;
+    }
+  
+    .bouton {
+  
+      width: 54%;
+      height: auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      margin: auto;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 25px;
+      padding: 15px;
+      background: linear-gradient(#FF79DA, #9356DC);
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  
+    .bouton:hover {
+      filter: brightness(1.2);
+    }
+  
+    h1,
+    h2,
+    .bouton {
+      margin-bottom: 15px;
+    }
+  
+  
+  }
+  
+  //-------------------------fonctionnement
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 20px 0;
+  
+    padding: 8px;
+    justify-content: space-around;
+  
+  
+  
+  
+    .bouton {
+      position: relative;
+      width: 90%;
+      height: auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 20px;
+      margin: 0 0 10px 12px;
+      text-align: center;
+      color: #000000;
+      background-color: #ffffff;
+      border: 1px solid #e7e7e7;
+      border-radius: 20px;
+      padding: 15px 15px 15px 0px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+  
+      i {
+        color: #7e7e7e;
+      }
+  
+      .fa-mobile-screen-button,
+      .fa-store,
+      .icon-combi {
+  
+        position: absolute;
+        left: 10%;
+        font-size: medium;
+      }
+  
+  
+  
+  
+      .fonction1 {
+        margin-left: 40px;
+      }
+  
+      .fonction2 {
+        margin-left: 25px;
+      }
+  
+      .fonction3 {
+        margin-left: 30px;
+      }
+  
+    }
+  
+    .bouton:hover {
+      background: #f5edff;
+  
+      i {
+        color: $couleur-primaire;
+      }
+    }
+  
+  
+    .cercle {
+  
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: $couleur-primaire;
+      color: #FFF;
+      left: -8px;
+  
+  
+    }
+  
+  }
+  
+  
+  //-------------------------restaurant
+  .restaurant {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 30px;
+    background-color: #f7f7f7;
+  
+    .titre {
+      padding-left: 12px;
+    }
+  
+    .card-restaurant {
+      position: relative;
+      height: auto;
+      width: 90%;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      border-radius: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  
+      .redirection {
+        color: #000;
+        text-decoration: none;
+      }
+  
+      img {
+        height: 180px;
+        width: 100%;
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+  
+      }
+  
+      .btn_nouveau {
+        display: flex;
+        position: absolute;
+        height: 30px;
+        width: 80px;
+        color: #139273;
+        background-color: #99E2D0;
+        top: 15px;
+        right: 15px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+  
+      }
+  
+      .card-text {
+  
+        padding: 5px 0 15px 15px;
+  
+        .card-title,
+        .card-subtitle {
+          margin: 0;
+        }
+  
+        .star {
+          position: absolute;
+          right: 18px;
+          bottom: 25px;
+          font-size: x-large;
+  
+        }
+  
+      }
+  
+    }
+  
+  }
+  
+  
+  
+  
+  //-------------------footer
+  footer {
+  
+    padding: 15px;
+    background-color: #353535;
+    text-align: left;
+    color: #FFF;
+  
+    h3 {
+      font-family: $font-titre;
+      letter-spacing: .1rem;
+    }
+  
+    ul {
+      margin: 0;
+      padding: 0;
+  
+      li {
+        list-style: none;
+        font-size: small;
+        margin-bottom: 3px;
+  
+        i {
+          width: 20px;
+        }
+      }
+  
+    }
+  
+    a {
+      text-decoration: none;
+      color: #FFF
+    }
+  
+  }
+
+  
+
+/* ------------------------------media querie tablettes------------------------------ */
+@media screen and (min-width: 768px) {
+
+
+    .fonctionnement {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      .bouton {
+        margin: 0 0 10px 12px;
+        width: 25%;
+        font-size: small;
+  
+        .fa-mobile-screen-button,
+        .fa-store,
+        .icon-combi {
+  
+          position: absolute;
+          left: 8%;
+          font-size: small;
+        }
+  
+        .fonction1,
+        .fonction2,
+        .fonction3 {
+          margin-left: 25px;
+  
+        }
+  
+      }
+  
+      .titre {
+        width: 100%;
+      }
+    }
+  
+    .restaurant {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+  
+      .titre {
+        width: 100%;
+      }
+  
+      .card-restaurant {
+        height: auto;
+        width: 300px;
+      }
+  
+  
+    }
+  
+  
+    footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+  
+      h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+  
+      }
+  
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+  
+        li {
+          flex-direction: row;
+  
+        }
+      }
+  
+  
+    }
+  
+  }
+  
+  
+  
+  /* ------------------------------media querie desktop------------------------------ */
+  @media screen and (min-width: 992px) {
+  
+    body {
+      margin: 0 1.5%;
+    }
+  
+    .nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background: linear-gradient(#ffffff, #eaeaea);
+    }
+  
+    header {
+  
+      width: 33%;
+      border-bottom: none;
+    }
+  
+    .localisation {
+      width: 33%;
+      justify-content: end;
+      align-items: flex-end;
+      position: absolute;
+      right: 0;
+      background-color: transparent;
+    }
+  
+    .reservation {
+  
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      .bouton {
+        width: 30%;
+      }
+    }
+  
+  
+    .fonctionnement {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+      .bouton {
+        margin: 0 0 10px 12px;
+        width: 20%;
+        font-size: large;
+  
+        .fa-mobile-screen-button,
+        .fa-store,
+        .icon-combi {
+          font-size: large;
+        }
+  
+      }
+  
+      .titre {
+        width: 100%;
+      }
+    }
+  
+  
+  
+  
+    footer {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  
+  
+      h3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+  
+      }
+  
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+  
+        li {
+          flex-direction: row;
+  
+        }
+      }
+  
+    }
+  
+  }
