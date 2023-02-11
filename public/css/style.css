@@ -17,6 +17,113 @@
   cursor: pointer;
 }
 
+.card-body {
+  opacity: 0;
+  animation-name: cascade;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-direction: alternate;
+}
+
+.card-menu:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.card-menu:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.card-menu:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.card-menu:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.card-menu:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+.card-menu:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.card-menu:nth-child(7) {
+  animation-delay: 2.1s;
+}
+
+.card-menu:nth-child(8) {
+  animation-delay: 2.4s;
+}
+
+.card-menu:nth-child(9) {
+  animation-delay: 2.7s;
+}
+
+@keyframes cascade {
+  to {
+    transform: translate(0, -15px);
+    opacity: 1;
+  }
+}
+/*--------- Animation Menu Animation Checking  -------*/
+.card-main {
+  display: flex;
+  min-width: 350px;
+  margin: 0px 10px 10px 0px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.card-main > .card-price {
+  align-items: center;
+}
+.card-main:hover > .box {
+  width: 5em;
+}
+.card-main:hover > .box .check > i {
+  transform: rotate(360deg);
+}
+
+.card-menu {
+  flex-grow: 1;
+  width: 10em;
+  cursor: pointer;
+  padding: 5px;
+}
+.card-menu p,
+.card-menu h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-price {
+  width: 2em;
+}
+
+.box {
+  display: flex;
+  width: 0;
+  background-color: #99E2D0;
+  transition: all 1s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.box .check {
+  margin: auto;
+  color: white;
+  background-color: #99E2D0;
+}
+.box .check i {
+  transition: all 0.6s;
+  transition-timing-function: linear;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
