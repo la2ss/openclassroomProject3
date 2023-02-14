@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import "./partials/header";
+@import "./partials/footer";
 @import "./partials/variables";
 @import "./partials/animations";
 @import "./partials/page1";
@@ -39,25 +41,7 @@ body {
 
 }
 
-//------------------------header
-header {
 
-    width: 100%;
-    display: flex;
-  
-    border-bottom: 2px solid gray;
-    justify-content: center;
-  
-  
-    & a {
-      display: none;
-    }
-  
-    & img {
-      width: 40%;
-      padding: 30px 0 15px 0;
-    }
-  }
   
   
   //------------------------localisation
@@ -76,7 +60,7 @@ header {
     }
   
     i {
-      //padding: 10px 10px 0 0;
+    
       padding: 0 10px 0 0;
     }
   
@@ -312,42 +296,6 @@ header {
   
   
   
-  
-  //-------------------footer
-  footer {
-  
-    padding: 15px;
-    background-color: #353535;
-    text-align: left;
-    color: #FFF;
-  
-    h3 {
-      font-family: $font-titre;
-      letter-spacing: .1rem;
-    }
-  
-    ul {
-      margin: 0;
-      padding: 0;
-  
-      li {
-        list-style: none;
-        font-size: small;
-        margin-bottom: 3px;
-  
-        i {
-          width: 20px;
-        }
-      }
-  
-    }
-  
-    a {
-      text-decoration: none;
-      color: #FFF
-    }
-  
-  }
 
   
 
@@ -407,34 +355,7 @@ header {
     }
   
   
-    footer {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-  
-  
-      h3 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-  
-      }
-  
-      ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 15px;
-  
-        li {
-          flex-direction: row;
-  
-        }
-      }
-  
-  
-    }
+
   
   }
   
@@ -454,12 +375,7 @@ header {
       background: linear-gradient(#ffffff, #eaeaea);
     }
   
-    header {
-  
-      width: 33%;
-      border-bottom: none;
-    }
-  
+
     .localisation {
       width: 33%;
       justify-content: end;
@@ -507,32 +423,6 @@ header {
   
   
   
-    footer {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
   
-  
-      h3 {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 15px;
-  
-      }
-  
-      ul {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 15px;
-  
-        li {
-          flex-direction: row;
-  
-        }
-      }
-  
-    }
   
   }

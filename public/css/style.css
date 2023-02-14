@@ -1,5 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+header {
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid gray;
+  justify-content: center;
+}
+header a {
+  display: none;
+}
+header img {
+  width: 40%;
+  padding: 30px 0 15px 0;
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    width: 33%;
+    border-bottom: none;
+  }
+}
+footer {
+  padding: 15px;
+  background-color: #353535;
+  text-align: left;
+  color: #FFF;
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.1rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  font-size: small;
+  margin-bottom: 3px;
+}
+footer ul li i {
+  width: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  footer ul li {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer h3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  footer ul li {
+    flex-direction: row;
+  }
+}
 @keyframes spin-load {
   0% {
     transform: scale(1);
@@ -295,20 +386,6 @@ body {
   animation: spin 3s linear infinite;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  border-bottom: 2px solid gray;
-  justify-content: center;
-}
-header a {
-  display: none;
-}
-header img {
-  width: 40%;
-  padding: 30px 0 15px 0;
-}
-
 .localisation {
   display: flex;
   background-color: #eaeaea;
@@ -496,33 +573,6 @@ header img {
   font-size: x-large;
 }
 
-footer {
-  padding: 15px;
-  background-color: #353535;
-  text-align: left;
-  color: #FFF;
-}
-footer h3 {
-  font-family: "Shrikhand", cursive;
-  letter-spacing: 0.1rem;
-}
-footer ul {
-  margin: 0;
-  padding: 0;
-}
-footer ul li {
-  list-style: none;
-  font-size: small;
-  margin-bottom: 3px;
-}
-footer ul li i {
-  width: 20px;
-}
-footer a {
-  text-decoration: none;
-  color: #FFF;
-}
-
 /* ------------------------------media querie tablettes------------------------------ */
 @media screen and (min-width: 768px) {
   .fonctionnement {
@@ -562,26 +612,6 @@ footer a {
     height: auto;
     width: 300px;
   }
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  footer h3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-  footer ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-  }
-  footer ul li {
-    flex-direction: row;
-  }
 }
 /* ------------------------------media querie desktop------------------------------ */
 @media screen and (min-width: 992px) {
@@ -593,10 +623,6 @@ footer a {
     flex-direction: row;
     flex-wrap: nowrap;
     background: linear-gradient(#ffffff, #eaeaea);
-  }
-  header {
-    width: 33%;
-    border-bottom: none;
   }
   .localisation {
     width: 33%;
@@ -631,26 +657,6 @@ footer a {
   }
   .fonctionnement .titre {
     width: 100%;
-  }
-  footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  footer h3 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-  }
-  footer ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-  }
-  footer ul li {
-    flex-direction: row;
   }
 }
 
